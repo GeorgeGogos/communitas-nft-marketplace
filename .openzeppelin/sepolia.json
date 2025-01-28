@@ -1,0 +1,177 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x722670302974CCe8d5b1039085F7b8dAa2d00015",
+      "txHash": "0x255f21078667baa16991033958bf8495e838e1547cc0492556354e220bef04eb",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "259df03a48f90bc78038bbeeac151b3309a84dee805210ca4a7ce47dad92c291": {
+      "address": "0x8fc946F30d6Ca1CD28FC526510A673A2d6132963",
+      "txHash": "0x64cfb6ce7941b94da8740cbe5d93f045e6d53f2e6eba5abbcfd75c694492cf52",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "nftContract",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(CommunitasNFT)9750",
+            "contract": "EnergyNFTMarketplace",
+            "src": "contracts/ENergyNFTMarketplace.sol:12"
+          },
+          {
+            "label": "inbox",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IInbox)396",
+            "contract": "EnergyNFTMarketplace",
+            "src": "contracts/ENergyNFTMarketplace.sol:13"
+          },
+          {
+            "label": "outbox",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(IOutbox)714",
+            "contract": "EnergyNFTMarketplace",
+            "src": "contracts/ENergyNFTMarketplace.sol:14"
+          },
+          {
+            "label": "listings",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_struct(Listing)9782_storage)",
+            "contract": "EnergyNFTMarketplace",
+            "src": "contracts/ENergyNFTMarketplace.sol:23"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)1271_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)1211_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_contract(CommunitasNFT)9750": {
+            "label": "contract CommunitasNFT",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IInbox)396": {
+            "label": "contract IInbox",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IOutbox)714": {
+            "label": "contract IOutbox",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_uint256,t_struct(Listing)9782_storage)": {
+            "label": "mapping(uint256 => struct EnergyNFTMarketplace.Listing)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Listing)9782_storage": {
+            "label": "struct EnergyNFTMarketplace.Listing",
+            "members": [
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "seller",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "forSale",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
